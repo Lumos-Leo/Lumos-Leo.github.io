@@ -27,6 +27,7 @@ I am currently pursuing my Ph.D. in the School of Information and Communication 
 - [Subspace Constraint and Contribution Estimation for Heterogeneous Federated Learning](https://github.com/AVC2-UESTC/FedSCE), Xiangtao Zhang, Sheng Li, Ao Li, Yipeng Liu, Fan Zhang, Ce Zhu, Le Zhang, **CVPR 2025**
 - [Rethinking Token Reduction with Parameter-Efficient Fine-Tuning in ViT for Pixel-Level Tasks](https://github.com/AVC2-UESTC/DAR-TR-PEFT), Cheng Lei, Ao Li, Hu Yao, Ce Zhu, Le Zhang, **CVPR 2025**
 - [Exploring frequency-inspired optimization in transformer for efficient single image super-resolution](https://github.com/AVC2-UESTC/Frequency-Inspired-Optimization-for-EfficientSR), Ao Li, Le Zhang, Yun Liu, Ce Zhu, **TPAMI 2025**
+- [Feature modulation transformer: Cross-refinement of global representation via high-frequency prior for image super-resolution](https://github.com/AVC2-UESTC/CRAFT-SR), Ao Li, Le Zhang, Yun Liu, Ce Zhu, **ICCV 2023**
 
 # Educations
 - *2022.09 - Present*, Ph.D., University of Electronic Science and Technology of China (UESTC).  
@@ -39,4 +40,4 @@ I am currently pursuing my Ph.D. in the School of Information and Communication 
 
 # Academic Services
 - **Journals:** TPAMI, TIP, TCSVT, TNNLS, TBC
-- **Conferences:** CVPR, ICCV, AAAI, ICME, 
+- **Conferences:** CVPR, ICCV, AAAI, ICME
