@@ -21,19 +21,19 @@ I am currently pursuing my Ph.D. in the School of Information and Communication 
 
 # 🔥 News
 - *2025.09*: &nbsp;🎉🎉 One paper is accepted to Proceedings of the IEEE.
-- *2025.08*: &nbsp;🎉🎉 One paper is accepted to IEEE T-PAMI. 
+- *2025.08*: &nbsp;🎉🎉 One paper is accepted to IEEE TPAMI. 
 - *2025.07*: &nbsp;🎉🎉 One paper is accepted to ICCV. 
 - *2025.02*: &nbsp;🎉🎉 Two papers are accepted to CVPR. 
-- *2025.01*: &nbsp;🎉🎉 One paper is accepted to IEEE T-PAMI. 
+- *2025.01*: &nbsp;🎉🎉 One paper is accepted to IEEE TPAMI. 
 
 # Publications 
-- [Deep Learning Empowered Super-Resolution: A Comprehensive Survey and Future Prospects](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11197230), Le Zhang, **Ao Li**, Qibin Hou, Ce Zhu, Yonina C. Eldar, **Proceedings of the IEEE**, 2025. **（CCF A 类会议）**
-- [Towards Real Zero-Shot Camouflaged Object Segmentation without Camouflaged Annotations](https://arxiv.org/abs/2410.16953), Cheng Lei, Jie Fan, Xinran Li, Tianzhu Xiang, **Ao Li**, Ce Zhu, Le Zhang, **IEEE T-PAMI**, 2025. **（CCF A 类会议）**
-- [MobileIE: An Extremely Lightweight and Effective ConvNet for Real-Time Image Enhancement on Mobile Devices](https://arxiv.org/abs/2507.01838), Hailong Yan, **Ao Li**, Xiangtao Zhang, Zhe Liu, Zenglin Shi, Ce Zhu, Le Zhang, **ICCV**, 2025. **（CCF A 类会议）**
-- [Subspace Constraint and Contribution Estimation for Heterogeneous Federated Learning](https://openaccess.thecvf.com/content/CVPR2025/papers/Zhang_Subspace_Constraint_and_Contribution_Estimation_for_Heterogeneous_Federated_Learning_CVPR_2025_paper.pdf), Xiangtao Zhang, Sheng Li, **Ao Li**, Yipeng Liu, Fan Zhang, Ce Zhu, Le Zhang, **CVPR**, 2025. **（CCF A 类会议）**
-- [Rethinking Token Reduction with Parameter-Efficient Fine-Tuning in ViT for Pixel-Level Tasks](https://openaccess.thecvf.com/content/CVPR2025/papers/Lei_Rethinking_Token_Reduction_with_Parameter-Efficient_Fine-Tuning_in_ViT_for_Pixel-Level_CVPR_2025_paper.pdf), Cheng Lei, **Ao Li**, Hu Yao, Ce Zhu, Le Zhang, **CVPR**, 2025. **（CCF A 类会议）**
-- [Exploring frequency-inspired optimization in transformer for efficient single image super-resolution](https://github.com/AVC2-UESTC/Frequency-Inspired-Optimization-for-EfficientSR), **Ao Li**, Le Zhang, Yun Liu, Ce Zhu, **IEEE T-PAMI**, 2025. **（CCF A 类会议）**
-- [Feature modulation transformer: Cross-refinement of global representation via high-frequency prior for image super-resolution](https://github.com/AVC2-UESTC/CRAFT-SR), **Ao Li**, Le Zhang, Yun Liu, Ce Zhu, **ICCV**, 2023. **（CCF A 类会议）**
+- [Deep Learning Empowered Super-Resolution: A Comprehensive Survey and Future Prospects](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11197230), Le Zhang, **Ao Li**, Qibin Hou, Ce Zhu, Yonina C. Eldar, **Proceedings of the IEEE**, 2025.
+- [Towards Real Zero-Shot Camouflaged Object Segmentation without Camouflaged Annotations](https://arxiv.org/abs/2410.16953), Cheng Lei, Jie Fan, Xinran Li, Tianzhu Xiang, **Ao Li**, Ce Zhu, Le Zhang, **IEEE TPAMI**, 2025.
+- [MobileIE: An Extremely Lightweight and Effective ConvNet for Real-Time Image Enhancement on Mobile Devices](https://arxiv.org/abs/2507.01838), Hailong Yan, **Ao Li**, Xiangtao Zhang, Zhe Liu, Zenglin Shi, Ce Zhu, Le Zhang, **ICCV**, 2025.
+- [Subspace Constraint and Contribution Estimation for Heterogeneous Federated Learning](https://openaccess.thecvf.com/content/CVPR2025/papers/Zhang_Subspace_Constraint_and_Contribution_Estimation_for_Heterogeneous_Federated_Learning_CVPR_2025_paper.pdf), Xiangtao Zhang, Sheng Li, **Ao Li**, Yipeng Liu, Fan Zhang, Ce Zhu, Le Zhang, **CVPR**, 2025.
+- [Rethinking Token Reduction with Parameter-Efficient Fine-Tuning in ViT for Pixel-Level Tasks](https://openaccess.thecvf.com/content/CVPR2025/papers/Lei_Rethinking_Token_Reduction_with_Parameter-Efficient_Fine-Tuning_in_ViT_for_Pixel-Level_CVPR_2025_paper.pdf), Cheng Lei, **Ao Li**, Hu Yao, Ce Zhu, Le Zhang, **CVPR**, 2025.
+- [Exploring frequency-inspired optimization in transformer for efficient single image super-resolution](https://github.com/AVC2-UESTC/Frequency-Inspired-Optimization-for-EfficientSR), **Ao Li**, Le Zhang, Yun Liu, Ce Zhu, **IEEE TPAMI**, 2025.
+- [Feature modulation transformer: Cross-refinement of global representation via high-frequency prior for image super-resolution](https://github.com/AVC2-UESTC/CRAFT-SR), **Ao Li**, Le Zhang, Yun Liu, Ce Zhu, **ICCV**, 2023.
 
 # Educations
 - *2022.09 - Present*, Ph.D., University of Electronic Science and Technology of China (UESTC).  
@@ -45,5 +45,5 @@ I am currently pursuing my Ph.D. in the School of Information and Communication 
 - *2020.09 - 2021.08*, Researcher, Sinovatio.  
 
 # Academic Services
-- **Journals:** IEEE T-PAMI, IEEE T-IP, IEEE T-CSVT, IEEE T-NNLS, IEEE T-BC
-- **Conferences:** CVPR, ICCV, AAAI, ICME
+- **Journals:** TPAMI, TIP, TCSVT, TNNLS, TBC, NN, JSTSP, TETCI
+- **Conferences:** CVPR, ICCV, AAAI, ICME, ICASSP
