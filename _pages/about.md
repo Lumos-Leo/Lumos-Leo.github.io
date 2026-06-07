@@ -20,6 +20,7 @@ redirect_from:
 I am currently pursuing my Ph.D. in the School of Information and Communication Engineering (SICE) at the University of Electronic Science and Technology of China (UESTC), under the joint supervision of [Prof. Le Zhang](https://scholar.google.com/citations?user=61LOyWUAAAAJ&hl=en) and [Prof. Ce Zhu](https://scholar.google.com/citations?user=C7iZbYMAAAAJ&hl=en). I earned my Master's degree from Chongqing University of Posts and Telecommunications (CQUPT) and completed my Bachelor's degree at Chongqing University (CQU). My research focuses on computer vision and deep learning, with particular interest in image restoration.
 
 # 🔥 News
+- *2026.02*: &nbsp;🎉🎉 One paper is accepted to IEEE TMM.
 - *2025.09*: &nbsp;🎉🎉 One paper is accepted to Proceedings of the IEEE.
 - *2025.08*: &nbsp;🎉🎉 One paper is accepted to IEEE TPAMI. 
 - *2025.07*: &nbsp;🎉🎉 One paper is accepted to ICCV. 
@@ -27,7 +28,8 @@ I am currently pursuing my Ph.D. in the School of Information and Communication 
 - *2025.01*: &nbsp;🎉🎉 One paper is accepted to IEEE TPAMI. 
 
 # Publications 
-- [Deep Learning Empowered Super-Resolution: A Comprehensive Survey and Future Prospects](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11197230), Le Zhang, **Ao Li**, Qibin Hou, Ce Zhu, Yonina C. Eldar, **Proceedings of the IEEE**, 2025.
+- [DRNet: All-in-One Image Restoration via Prior-Guided Dynamic Reparameterization](https://arxiv.org/pdf/2605.08627), **Ao Li**, Xiaoning Liu, Sheng Li, Yapeng Du, Zhen Long, Lei Luo, Le Zhang, Ce Zhu, **IEEE TMM**, 2026.
+- [Deep-Learning-Empowered Super-Resolution: A Comprehensive Survey and Future Prospects](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11197230), Le Zhang, **Ao Li**, Qibin Hou, Ce Zhu, Yonina C. Eldar, **Proceedings of the IEEE**, 2025.
 - [Towards Real Zero-Shot Camouflaged Object Segmentation without Camouflaged Annotations](https://arxiv.org/abs/2410.16953), Cheng Lei, Jie Fan, Xinran Li, Tianzhu Xiang, **Ao Li**, Ce Zhu, Le Zhang, **IEEE TPAMI**, 2025.
 - [MobileIE: An Extremely Lightweight and Effective ConvNet for Real-Time Image Enhancement on Mobile Devices](https://arxiv.org/abs/2507.01838), Hailong Yan, **Ao Li**, Xiangtao Zhang, Zhe Liu, Zenglin Shi, Ce Zhu, Le Zhang, **ICCV**, 2025.
 - [Subspace Constraint and Contribution Estimation for Heterogeneous Federated Learning](https://openaccess.thecvf.com/content/CVPR2025/papers/Zhang_Subspace_Constraint_and_Contribution_Estimation_for_Heterogeneous_Federated_Learning_CVPR_2025_paper.pdf), Xiangtao Zhang, Sheng Li, **Ao Li**, Yipeng Liu, Fan Zhang, Ce Zhu, Le Zhang, **CVPR**, 2025.
