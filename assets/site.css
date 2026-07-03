@@ -316,15 +316,24 @@ li {
 .footer-line {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
   justify-content: center;
+  line-height: 1.4;
+}
+
+.footer-meta::after {
+  content: "·";
+  margin-left: 8px;
+  color: #a9b0b7;
 }
 
 .footer-line img {
   display: inline-block;
-  height: 24px;
+  height: 20px;
   width: auto;
+  opacity: 0.92;
+  vertical-align: middle;
 }
 
 @media (max-width: 700px) {
@@ -378,5 +387,10 @@ li {
 
   .news-container {
     max-height: 220px;
+  }
+
+  .footer-meta::after {
+    content: "";
+    margin-left: 0;
   }
 }
