@@ -1,0 +1,128 @@
+{
+  "name": "Ao Li",
+  "citedby": 311,
+  "hindex": 6,
+  "i10index": 5,
+  "publications": {
+    "0": {
+      "bib": {
+        "title": "Feature modulation transformer: Cross-refinement of global representation via high-frequency prior for image super-resolution",
+        "pub_year": 2023,
+        "venue": ""
+      },
+      "num_citations": 184
+    },
+    "1": {
+      "bib": {
+        "title": "Exploring frequency-inspired optimization in transformer for efficient single image super-resolution",
+        "pub_year": 2025,
+        "venue": ""
+      },
+      "num_citations": 38
+    },
+    "2": {
+      "bib": {
+        "title": "MobileIE: An Extremely Lightweight and Effective ConvNet for Real-Time Image Enhancement on Mobile Devices",
+        "pub_year": 2025,
+        "venue": ""
+      },
+      "num_citations": 19
+    },
+    "3": {
+      "bib": {
+        "title": "Towards real zero-shot camouflaged object segmentation without camouflaged annotations",
+        "pub_year": 2025,
+        "venue": ""
+      },
+      "num_citations": 18
+    },
+    "4": {
+      "bib": {
+        "title": "Real-time tracking of vehicles with siamese network and backward prediction",
+        "pub_year": 2020,
+        "venue": ""
+      },
+      "num_citations": 13
+    },
+    "5": {
+      "bib": {
+        "title": "Deep-Learning-Empowered Super Resolution: A Comprehensive Survey and Future Prospects",
+        "pub_year": 2025,
+        "venue": ""
+      },
+      "num_citations": 9
+    },
+    "6": {
+      "bib": {
+        "title": "Subspace Constraint and Contribution Estimation for Heterogeneous Federated Learning",
+        "pub_year": 2025,
+        "venue": ""
+      },
+      "num_citations": 6
+    },
+    "7": {
+      "bib": {
+        "title": "Soft transmission of 3D video for low power and low complexity scenario",
+        "pub_year": 2023,
+        "venue": ""
+      },
+      "num_citations": 6
+    },
+    "8": {
+      "bib": {
+        "title": "Rethinking Token Reduction with Parameter-Efficient Fine-Tuning in ViT for Pixel-Level Tasks",
+        "pub_year": 2025,
+        "venue": ""
+      },
+      "num_citations": 5
+    },
+    "9": {
+      "bib": {
+        "title": "PASTA: Towards flexible and efficient HDR imaging via progressively aggregated spatio-temporal alignment",
+        "pub_year": 2024,
+        "venue": ""
+      },
+      "num_citations": 5
+    },
+    "10": {
+      "bib": {
+        "title": "An improved puncturing scheme for polar codes",
+        "pub_year": 2020,
+        "venue": ""
+      },
+      "num_citations": 5
+    },
+    "11": {
+      "bib": {
+        "title": "Deep unfolding network for hyperspectral image super-resolution with automatic exposure correction",
+        "pub_year": 2024,
+        "venue": ""
+      },
+      "num_citations": 2
+    },
+    "12": {
+      "bib": {
+        "title": "Clustering-based Optimization for Side Window Filtering",
+        "pub_year": 2020,
+        "venue": ""
+      },
+      "num_citations": 1
+    },
+    "13": {
+      "bib": {
+        "title": "DRNet: All-in-One Image Restoration via Prior-Guided Dynamic Reparameterization",
+        "pub_year": 2026,
+        "venue": ""
+      },
+      "num_citations": 0
+    },
+    "14": {
+      "bib": {
+        "title": "IdCo: Joint Identification and Contrastive Learning for Masked Face Recognition",
+        "pub_year": 2025,
+        "venue": ""
+      },
+      "num_citations": 0
+    }
+  }
+}
