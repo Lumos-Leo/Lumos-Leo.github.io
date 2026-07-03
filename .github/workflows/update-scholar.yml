@@ -1,0 +1,29 @@
+name: Update Google Scholar citations
+
+on:
+  schedule:
+    - cron: "20 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-scholar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r google_scholar_crawler/requirements.txt
+      - name: Fetch citation data
+        env:
+          GOOGLE_SCHOLAR_ID: rMnQ-u0AAAAJ
+        run: python google_scholar_crawler/main.py
+      - name: Commit updated data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update Google Scholar citation data"
+          file_pattern: google-scholar-stats/gs_data.json

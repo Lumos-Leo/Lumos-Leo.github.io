@@ -1,68 +1,41 @@
-# from scholarly import scholarly
-# import jsonpickle
-# import json
-# from datetime import datetime
-# import os
-
-# author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
-# scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
-# name = author['name']
-# author['updated'] = str(datetime.now())
-# author['publications'] = {v['author_pub_id']:v for v in author['publications']}
-# print(json.dumps(author, indent=2))
-# os.makedirs('results', exist_ok=True)
-# with open(f'results/gs_data.json', 'w') as outfile:
-#     json.dump(author, outfile, ensure_ascii=False)
-
-# shieldio_data = {
-#   "schemaVersion": 1,
-#   "label": "citations",
-#   "message": f"{author['citedby']}",
-# }
-# with open(f'results/gs_data_shieldsio.json', 'w') as outfile:
-#     json.dump(shieldio_data, outfile, ensure_ascii=False)
-
-from scholarly import scholarly, ProxyGenerator
 import json
-from datetime import datetime
 import os
-from scholarly._proxy_generator import MaxTriesExceededException
+from pathlib import Path
 
-# Setup proxy
-pg = ProxyGenerator()
-pg.FreeProxies()  # Use free rotating proxies
-scholarly.use_proxy(pg)
+from scholarly import scholarly
 
 
-try:
-    print("正在查找作者信息...")
-    author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
-except MaxTriesExceededException as e:
-    print(f"发生异常: {e}")
-else:
-    print("正在填充作者详细信息...")
-    scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
-    name = author['name']
-    author['updated'] = str(datetime.now())
-    author['publications'] = {v['author_pub_id']:v for v in author['publications']}
-    print(json.dumps(author, indent=2))
-    
-    print("正在创建结果目录...")
-    os.makedirs('results', exist_ok=True)
-    
-    print("正在保存作者数据...")
-    with open(f'results/gs_data.json', 'w') as outfile:
-        json.dump(author, outfile, ensure_ascii=False)
-        
-    print("正在生成 Shields.io 数据...")
-    shieldio_data = {
-      "schemaVersion": 1,
-      "label": "citations",
-      "message": f"{author.get('citedby', 0)}",
+SCHOLAR_ID = os.getenv("GOOGLE_SCHOLAR_ID", "rMnQ-u0AAAAJ")
+OUTPUT = Path("google-scholar-stats/gs_data.json")
+
+
+def main():
+    author = scholarly.search_author_id(SCHOLAR_ID)
+    author = scholarly.fill(author, sections=["basics", "indices", "counts", "publications"])
+
+    publications = {}
+    for index, publication in enumerate(author.get("publications", [])):
+        filled = scholarly.fill(publication)
+        publications[str(index)] = {
+            "bib": {
+                "title": filled.get("bib", {}).get("title", ""),
+                "pub_year": filled.get("bib", {}).get("pub_year", ""),
+                "venue": filled.get("bib", {}).get("venue", ""),
+            },
+            "num_citations": filled.get("num_citations", 0),
+        }
+
+    data = {
+        "name": author.get("name", "Ao Li"),
+        "citedby": author.get("citedby", 0),
+        "hindex": author.get("hindex", 0),
+        "i10index": author.get("i10index", 0),
+        "publications": publications,
     }
-    
-    print("正在保存 Shields.io 数据...")
-    with open(f'results/gs_data_shieldsio.json', 'w') as outfile:
-        json.dump(shieldio_data, outfile, ensure_ascii=False)
-        
-    print("数据处理完成。")
+
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()
