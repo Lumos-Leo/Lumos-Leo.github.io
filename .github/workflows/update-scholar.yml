@@ -2,7 +2,7 @@ name: Update Google Scholar citations
 
 on:
   schedule:
-    - cron: "20 18 * * *"
+    - cron: "20 18 * * 0"
   workflow_dispatch:
 
 permissions:
@@ -13,16 +13,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check biweekly cadence
+        id: cadence
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          week=$(date -u +%V)
+          if [ $((10#$week % 2)) -eq 0 ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/setup-python@v5
+        if: steps.cadence.outputs.run == 'true'
         with:
           python-version: "3.11"
       - name: Install dependencies
+        if: steps.cadence.outputs.run == 'true'
         run: pip install -r google_scholar_crawler/requirements.txt
       - name: Fetch citation data
+        if: steps.cadence.outputs.run == 'true'
         env:
           GOOGLE_SCHOLAR_ID: rMnQ-u0AAAAJ
         run: python google_scholar_crawler/main.py
       - name: Commit updated data
+        if: steps.cadence.outputs.run == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update Google Scholar citation data"
