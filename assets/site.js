@@ -6,6 +6,14 @@
     }
   }
 
+  function normalizeTitle(value) {
+    return String(value || '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, ' ')
+      .trim()
+      .replace(/\s+/g, ' ');
+  }
+
   fetch('google-scholar-stats/gs_data.json', { cache: 'no-store' })
     .then(function (response) {
       if (!response.ok) throw new Error('missing scholar stats');
@@ -18,10 +26,13 @@
         return publications[key];
       });
       document.querySelectorAll('[data-title]').forEach(function (item) {
-        var title = (item.getAttribute('data-title') || '').toLowerCase();
+        var title = normalizeTitle(item.getAttribute('data-title'));
         var match = entries.find(function (entry) {
-          return entry && entry.bib && entry.bib.title &&
-            entry.bib.title.toLowerCase() === title;
+          if (!entry || !entry.bib || !entry.bib.title) return false;
+          var scholarTitle = normalizeTitle(entry.bib.title);
+          return scholarTitle === title ||
+            scholarTitle.indexOf(title) !== -1 ||
+            title.indexOf(scholarTitle) !== -1;
         });
         var target = item.querySelector('.paper-citations');
         if (match && target) {
