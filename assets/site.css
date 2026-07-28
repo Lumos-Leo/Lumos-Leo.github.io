@@ -265,8 +265,7 @@ li {
   margin-left: 6px;
 }
 
-.paper-link,
-.citation-badge {
+.paper-link {
   display: inline-flex;
   align-items: center;
   min-height: 22px;
@@ -291,11 +290,6 @@ li {
   background: #243b4a;
 }
 
-.citation-badge {
-  color: #47525d;
-  background: #eef1f4;
-  font-weight: 600;
-}
 
 .footer {
   text-align: center;
